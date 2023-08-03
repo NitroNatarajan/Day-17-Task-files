@@ -11,11 +11,8 @@ reset.addEventListener("click", () => {
   p.style.visibility = "visible";
   h2.innerText = "";
 })
-count.addEventListener("click", () => {
-  countDown();
-});
-const countDown = (counter = 10) => {
-  h2.innerText = counter;
+count.addEventListener("click", (counter=10) => {
+   h2.innerText = counter;
   setTimeout(() => {
     h2.innerText = counter--;
     setTimeout(() => {
@@ -38,7 +35,7 @@ const countDown = (counter = 10) => {
                       h2.innerText = counter--;
                       setTimeout(() => {
                         p.style.visibility = "hidden";
-                        h2.innerText = "Happy Independance Day";
+                        h2.innerText = "Happy Independence Day";
                         counter = 10;
                       }, 1000)
                     }, 1000)
@@ -51,5 +48,5 @@ const countDown = (counter = 10) => {
       }, 1000)
     }, 1000)
   }, 1000)
-}
+});
 
