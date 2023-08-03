@@ -9,6 +9,7 @@ h2.style.fontSize = "10rem";
 
 reset.addEventListener("click", () => {
   p.style.visibility = "visible";
+  h2.innerText = "";
 })
 count.addEventListener("click", () => {
   countDown();
